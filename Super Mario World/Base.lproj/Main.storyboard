@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJs-hk-7z6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EJs-hk-7z6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="4af-sZ-Kw6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EJs-hk-7z6" secondAttribute="bottom" id="5V5-wp-f0c"/>
+                            <constraint firstAttribute="topMargin" secondItem="EJs-hk-7z6" secondAttribute="top" id="9gu-7u-YGv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EJs-hk-7z6" secondAttribute="trailing" constant="-20" id="Kgw-mE-tY2"/>
+                            <constraint firstAttribute="trailing" secondItem="EJs-hk-7z6" secondAttribute="trailing" id="OaN-EE-wmq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EJs-hk-7z6" secondAttribute="bottom" id="Oao-fZ-8uf"/>
+                            <constraint firstAttribute="topMargin" secondItem="EJs-hk-7z6" secondAttribute="top" id="QrQ-8V-Bkd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EJs-hk-7z6" secondAttribute="trailing" constant="-20" id="VcW-e2-Olf"/>
+                            <constraint firstItem="EJs-hk-7z6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="awN-Zp-iFR"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EJs-hk-7z6" secondAttribute="bottom" id="bGZ-H0-0Fi"/>
+                            <constraint firstItem="EJs-hk-7z6" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="rBM-Ph-VJd"/>
+                            <constraint firstItem="EJs-hk-7z6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s7i-9h-6QW"/>
+                            <constraint firstItem="EJs-hk-7z6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ujb-7R-6zR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4af-sZ-Kw6"/>
+                                <exclude reference="9gu-7u-YGv"/>
+                                <exclude reference="Kgw-mE-tY2"/>
+                                <exclude reference="Oao-fZ-8uf"/>
+                                <exclude reference="QrQ-8V-Bkd"/>
+                                <exclude reference="VcW-e2-Olf"/>
+                                <exclude reference="awN-Zp-iFR"/>
+                                <exclude reference="bGZ-H0-0Fi"/>
+                                <exclude reference="rBM-Ph-VJd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="conatinerView" destination="EJs-hk-7z6" id="OVP-Yq-WYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="350"/>
+        </scene>
+    </scenes>
+</document>
