@@ -77,6 +77,7 @@
                         <outlet property="conatinerView" destination="EJs-hk-7z6" id="OVP-Yq-WYF"/>
                         <outlet property="containerView" destination="EJs-hk-7z6" id="Qxn-0d-brU"/>
                         <outlet property="fireballButton" destination="nrW-vG-0D1" id="LoR-K2-FX4"/>
+                        <outlet property="jumpButton" destination="O2H-2P-kvj" id="Wta-Rb-IKj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

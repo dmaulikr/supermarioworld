@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIView *fireballButton;
+@property (weak, nonatomic) IBOutlet UIView *jumpButton;
 
 
 @end
