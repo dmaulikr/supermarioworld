@@ -20,7 +20,27 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJs-hk-7z6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrW-vG-0D1">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-2P-kvj">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="600"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nrW-vG-0D1" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="6JT-nj-ZmF"/>
+                                    <constraint firstAttribute="trailing" secondItem="O2H-2P-kvj" secondAttribute="trailing" id="6Ny-Z2-ndR"/>
+                                    <constraint firstItem="O2H-2P-kvj" firstAttribute="leading" secondItem="EJs-hk-7z6" secondAttribute="leading" priority="250" constant="300" id="7kL-u7-0nL"/>
+                                    <constraint firstItem="O2H-2P-kvj" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="QcT-VM-c4p"/>
+                                    <constraint firstAttribute="bottom" secondItem="nrW-vG-0D1" secondAttribute="bottom" id="RTB-hq-1Kc"/>
+                                    <constraint firstItem="nrW-vG-0D1" firstAttribute="leading" secondItem="EJs-hk-7z6" secondAttribute="leading" id="TDf-69-gTa"/>
+                                    <constraint firstItem="O2H-2P-kvj" firstAttribute="leading" secondItem="nrW-vG-0D1" secondAttribute="trailing" id="gu7-N3-8JE"/>
+                                    <constraint firstAttribute="bottom" secondItem="O2H-2P-kvj" secondAttribute="bottom" id="sJs-q9-VgM"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -55,6 +75,8 @@
                     </view>
                     <connections>
                         <outlet property="conatinerView" destination="EJs-hk-7z6" id="OVP-Yq-WYF"/>
+                        <outlet property="containerView" destination="EJs-hk-7z6" id="Qxn-0d-brU"/>
+                        <outlet property="fireballButton" destination="nrW-vG-0D1" id="LoR-K2-FX4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

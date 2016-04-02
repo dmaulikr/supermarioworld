@@ -10,7 +10,9 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UIView *conatinerView;
+@property (strong, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *fireballButton;
+
 
 @end
 
