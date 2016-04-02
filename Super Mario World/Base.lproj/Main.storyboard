@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,26 +23,43 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJs-hk-7z6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrW-vG-0D1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5E-dN-NK9">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-2P-kvj">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="lKI-Kq-D8J"/>
+                                        </constraints>
+                                        <state key="normal" title="B">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwp-8O-Ri2">
                                         <rect key="frame" x="300" y="0.0" width="300" height="600"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
+                                        <state key="normal" title="A">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="nrW-vG-0D1" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="6JT-nj-ZmF"/>
-                                    <constraint firstAttribute="trailing" secondItem="O2H-2P-kvj" secondAttribute="trailing" id="6Ny-Z2-ndR"/>
-                                    <constraint firstItem="O2H-2P-kvj" firstAttribute="leading" secondItem="EJs-hk-7z6" secondAttribute="leading" priority="250" constant="300" id="7kL-u7-0nL"/>
-                                    <constraint firstItem="O2H-2P-kvj" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="QcT-VM-c4p"/>
-                                    <constraint firstAttribute="bottom" secondItem="nrW-vG-0D1" secondAttribute="bottom" id="RTB-hq-1Kc"/>
-                                    <constraint firstItem="nrW-vG-0D1" firstAttribute="leading" secondItem="EJs-hk-7z6" secondAttribute="leading" id="TDf-69-gTa"/>
-                                    <constraint firstItem="O2H-2P-kvj" firstAttribute="leading" secondItem="nrW-vG-0D1" secondAttribute="trailing" id="gu7-N3-8JE"/>
-                                    <constraint firstAttribute="bottom" secondItem="O2H-2P-kvj" secondAttribute="bottom" id="sJs-q9-VgM"/>
+                                    <constraint firstItem="kwp-8O-Ri2" firstAttribute="top" secondItem="R5E-dN-NK9" secondAttribute="top" id="0KE-U5-lCq"/>
+                                    <constraint firstItem="kwp-8O-Ri2" firstAttribute="leading" secondItem="R5E-dN-NK9" secondAttribute="trailing" id="9Zx-GD-mlb"/>
+                                    <constraint firstItem="kwp-8O-Ri2" firstAttribute="baseline" secondItem="R5E-dN-NK9" secondAttribute="firstBaseline" id="Eef-Vh-2ax"/>
+                                    <constraint firstAttribute="bottom" secondItem="kwp-8O-Ri2" secondAttribute="bottom" id="MzX-hu-NPg"/>
+                                    <constraint firstItem="kwp-8O-Ri2" firstAttribute="firstBaseline" secondItem="R5E-dN-NK9" secondAttribute="baseline" id="Tue-Z2-yJO"/>
+                                    <constraint firstAttribute="trailing" secondItem="kwp-8O-Ri2" secondAttribute="trailing" id="XsS-d4-6xc"/>
+                                    <constraint firstItem="R5E-dN-NK9" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="kMu-F9-U3Y"/>
+                                    <constraint firstItem="R5E-dN-NK9" firstAttribute="leading" secondItem="EJs-hk-7z6" secondAttribute="leading" id="lPK-iV-3kt"/>
+                                    <constraint firstItem="kwp-8O-Ri2" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="mev-qf-W3K"/>
+                                    <constraint firstAttribute="bottom" secondItem="R5E-dN-NK9" secondAttribute="bottom" id="zhU-Fp-CFa"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0KE-U5-lCq"/>
+                                        <exclude reference="Eef-Vh-2ax"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -76,13 +95,11 @@
                     <connections>
                         <outlet property="conatinerView" destination="EJs-hk-7z6" id="OVP-Yq-WYF"/>
                         <outlet property="containerView" destination="EJs-hk-7z6" id="Qxn-0d-brU"/>
-                        <outlet property="fireballButton" destination="nrW-vG-0D1" id="LoR-K2-FX4"/>
-                        <outlet property="jumpButton" destination="O2H-2P-kvj" id="Wta-Rb-IKj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="350"/>
+            <point key="canvasLocation" x="283" y="344"/>
         </scene>
     </scenes>
 </document>
