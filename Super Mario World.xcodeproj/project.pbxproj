@@ -15,7 +15,8 @@
 		9889223A1CAD5F7B0017CE28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988922381CAD5F7B0017CE28 /* LaunchScreen.storyboard */; };
 		988922451CAD5F7B0017CE28 /* Super_Mario_WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 988922441CAD5F7B0017CE28 /* Super_Mario_WorldTests.m */; };
 		988922501CAD5F7B0017CE28 /* Super_Mario_WorldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889224F1CAD5F7B0017CE28 /* Super_Mario_WorldUITests.m */; };
-		9889225E1CB0D0900017CE28 /* MARIO.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 9889225D1CB0D0700017CE28 /* MARIO.TTF */; };
+		988922601CB0D2F30017CE28 /* Super Mario Bros.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9889225F1CB0D2F30017CE28 /* Super Mario Bros.ttf */; };
+		988922621CB0D3E70017CE28 /* emulogic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988922611CB0D3E70017CE28 /* emulogic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		9889224B1CAD5F7B0017CE28 /* Super Mario WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Super Mario WorldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9889224F1CAD5F7B0017CE28 /* Super_Mario_WorldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Super_Mario_WorldUITests.m; sourceTree = "<group>"; };
 		988922511CAD5F7B0017CE28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9889225D1CB0D0700017CE28 /* MARIO.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = MARIO.TTF; path = Assets/MARIO.TTF; sourceTree = SOURCE_ROOT; };
+		9889225F1CB0D2F30017CE28 /* Super Mario Bros.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Super Mario Bros.ttf"; path = "Assets/mario-monsters_super-mario-bros/Super Mario Bros.ttf"; sourceTree = SOURCE_ROOT; };
+		988922611CB0D3E70017CE28 /* emulogic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = emulogic.ttf; path = Assets/emulogic.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +121,8 @@
 		9889222A1CAD5F7B0017CE28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9889225D1CB0D0700017CE28 /* MARIO.TTF */,
+				988922611CB0D3E70017CE28 /* emulogic.ttf */,
+				9889225F1CB0D2F30017CE28 /* Super Mario Bros.ttf */,
 				9889222B1CAD5F7B0017CE28 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -250,7 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9889223A1CAD5F7B0017CE28 /* LaunchScreen.storyboard in Resources */,
-				9889225E1CB0D0900017CE28 /* MARIO.TTF in Resources */,
+				988922601CB0D2F30017CE28 /* Super Mario Bros.ttf in Resources */,
+				988922621CB0D3E70017CE28 /* emulogic.ttf in Resources */,
 				988922371CAD5F7B0017CE28 /* Assets.xcassets in Resources */,
 				988922351CAD5F7B0017CE28 /* Main.storyboard in Resources */,
 			);
