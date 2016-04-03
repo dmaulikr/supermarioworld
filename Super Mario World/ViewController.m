@@ -11,9 +11,6 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UIView *containerView;
-@property (weak, nonatomic) IBOutlet UIView *fireballButton;
-@property (weak, nonatomic) IBOutlet UIView *jumpButton;
-
 
 @end
 
@@ -22,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)marioAction:(id)sender {
+}
+
+- (IBAction)marioJump:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {
