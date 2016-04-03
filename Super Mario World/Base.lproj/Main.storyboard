@@ -5,8 +5,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MARIO.TTF">
+            <string>MarioandLuigi</string>
+            <string>MarioandLuigi</string>
+            <string>MarioandLuigi</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,7 +33,8 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5E-dN-NK9">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
-                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.6470588235294118" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MarioandLuigi" family="Mario and Luigi" pointSize="15"/>
                                         <state key="normal" title="B">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -35,7 +44,8 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwp-8O-Ri2">
                                         <rect key="frame" x="300" y="0.0" width="300" height="600"/>
-                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.15686274509803921" green="0.21176470588235294" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MarioandLuigi" family="Mario and Luigi" pointSize="15"/>
                                         <state key="normal" title="A">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -43,16 +53,30 @@
                                             <action selector="marioJump:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8G-8F-X97"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;- Tilt the screen left and right to move! -&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILO-Qd-j8x">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ILO-Qd-j8x" secondAttribute="height" multiplier="20:3" id="2XU-eJ-LzX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarioandLuigi" family="Mario and Luigi" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="kwp-8O-Ri2" firstAttribute="top" secondItem="R5E-dN-NK9" secondAttribute="top" id="0KE-U5-lCq"/>
                                     <constraint firstItem="kwp-8O-Ri2" firstAttribute="leading" secondItem="R5E-dN-NK9" secondAttribute="trailing" id="9Zx-GD-mlb"/>
+                                    <constraint firstItem="ILO-Qd-j8x" firstAttribute="leading" secondItem="EJs-hk-7z6" secondAttribute="leading" id="DnX-F9-kJM"/>
                                     <constraint firstItem="kwp-8O-Ri2" firstAttribute="baseline" secondItem="R5E-dN-NK9" secondAttribute="firstBaseline" id="Eef-Vh-2ax"/>
+                                    <constraint firstItem="ILO-Qd-j8x" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="IuA-Ig-Vhv"/>
                                     <constraint firstAttribute="bottom" secondItem="kwp-8O-Ri2" secondAttribute="bottom" id="MzX-hu-NPg"/>
                                     <constraint firstItem="kwp-8O-Ri2" firstAttribute="firstBaseline" secondItem="R5E-dN-NK9" secondAttribute="baseline" id="Tue-Z2-yJO"/>
                                     <constraint firstAttribute="trailing" secondItem="kwp-8O-Ri2" secondAttribute="trailing" id="XsS-d4-6xc"/>
+                                    <constraint firstItem="ILO-Qd-j8x" firstAttribute="centerX" secondItem="EJs-hk-7z6" secondAttribute="centerX" id="gF9-pi-28A"/>
                                     <constraint firstItem="R5E-dN-NK9" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="kMu-F9-U3Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="ILO-Qd-j8x" secondAttribute="trailing" id="kUd-sy-O1c"/>
                                     <constraint firstItem="R5E-dN-NK9" firstAttribute="leading" secondItem="EJs-hk-7z6" secondAttribute="leading" id="lPK-iV-3kt"/>
                                     <constraint firstItem="R5E-dN-NK9" firstAttribute="width" secondItem="kwp-8O-Ri2" secondAttribute="width" id="lWU-hK-Dzd"/>
                                     <constraint firstItem="kwp-8O-Ri2" firstAttribute="top" secondItem="EJs-hk-7z6" secondAttribute="top" id="mev-qf-W3K"/>
@@ -97,8 +121,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="conatinerView" destination="EJs-hk-7z6" id="OVP-Yq-WYF"/>
-                        <outlet property="containerView" destination="EJs-hk-7z6" id="Qxn-0d-brU"/>
+                        <outlet property="containerView" destination="EJs-hk-7z6" id="qRJ-d6-SWl"/>
+                        <outlet property="instructionsView" destination="ILO-Qd-j8x" id="Ukv-2q-6kj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -10,7 +10,8 @@
 
 @interface ViewController ()
 
-@property (strong, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UILabel *instructionsView;
 
 @end
 
@@ -20,6 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
 
 - (IBAction)marioAction:(id)sender {
 }
