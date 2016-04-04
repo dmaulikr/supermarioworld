@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="b223c28d051ed244d745987803537913.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q5L-DK-Ufh">
+                                <rect key="frame" x="13" y="12" width="575" height="575"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q5L-DK-Ufh" secondAttribute="height" multiplier="1:1" id="MgQ-3J-Kvz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q5L-DK-Ufh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gpB-Hc-Wth"/>
+                            <constraint firstItem="q5L-DK-Ufh" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="23:24" id="pvh-Ny-jjN"/>
+                            <constraint firstItem="q5L-DK-Ufh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uvH-co-QmA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +38,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="b223c28d051ed244d745987803537913.jpg" width="736" height="736"/>
+    </resources>
 </document>

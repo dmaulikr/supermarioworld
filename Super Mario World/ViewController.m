@@ -20,9 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    [self animateInstructions];
 }
 
-
+- (void)animateInstructions {
+    self.instructionsView.alpha = 0;
+    
+    [UIView animateWithDuration:1
+                          delay:0
+                        options: UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+                         self.instructionsView.alpha = 1;
+                     } completion:nil];
+}
 
 - (IBAction)marioAction:(id)sender {
 }
