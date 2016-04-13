@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="b223c28d051ed244d745987803537913.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q5L-DK-Ufh">
-                                <rect key="frame" x="13" y="12" width="575" height="575"/>
+                                <rect key="frame" x="0.0" y="-1" width="600" height="601"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="q5L-DK-Ufh" secondAttribute="height" multiplier="1:1" id="MgQ-3J-Kvz"/>
                                 </constraints>
@@ -28,8 +28,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="q5L-DK-Ufh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gpB-Hc-Wth"/>
-                            <constraint firstItem="q5L-DK-Ufh" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="23:24" id="pvh-Ny-jjN"/>
+                            <constraint firstItem="q5L-DK-Ufh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rFr-Hd-1Cx"/>
                             <constraint firstItem="q5L-DK-Ufh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uvH-co-QmA"/>
+                            <constraint firstAttribute="trailing" secondItem="q5L-DK-Ufh" secondAttribute="trailing" id="x11-Yl-FV4"/>
                         </constraints>
                     </view>
                 </viewController>
