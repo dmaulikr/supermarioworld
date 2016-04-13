@@ -28,6 +28,11 @@
 	<string>Main</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>font000000001cbed08a.ttf</string>
+		<string>font000000001cbed013.ttf</string>
+		<string>font000000001cbecf8f.ttf</string>
+		<string>font000000001cbecf8f</string>
+		<string>font000000001cbece31.ttf</string>
 		<string>emulogic.ttf</string>
 		<string>Super Mario Bros.ttf</string>
 	</array>

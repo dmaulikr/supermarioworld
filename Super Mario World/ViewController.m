@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SocketIO.h"
 
-@interface ViewController ()
+@interface ViewController ()<SocketIODelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UILabel *instructionsView;
@@ -22,13 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    [self importSocket];
+    [self importSocket];
     [self animateInstructions];
 }
 
 - (void)importSocket {
-//    self.socketIO = [[SocketIO alloc] initWithDelegate:self];
-//    [self.socketIO connectToHost:@"localhost" onPort:3000];
+    self.socketIO = [[SocketIO alloc] initWithDelegate:self];
+    [self.socketIO connectToHost:@"localhost" onPort:3000];
 }
 
 - (void)animateInstructions {
@@ -43,13 +43,11 @@
 }
 
 - (IBAction)marioAction:(id)sender {
-//    [self.socketIO sendMessage:@"action"];
-    NSLog(@"action");
+    [self.socketIO sendMessage:@"action"];
 }
 
 - (IBAction)marioJump:(id)sender {
-//    [self.socketIO sendMessage:@"jump"];
-    NSLog(@"jump");
+    [self.socketIO sendMessage:@"jump"];
 }
 
 - (void)didReceiveMemoryWarning {
