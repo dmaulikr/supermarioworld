@@ -1,11 +1,3 @@
-**The current version of this library does not support socket.io v1.0.  
-So if you want to use socket.io-objc, please fall back to v0.9.x.**
-
-Today (15/03/09) the Socket.io guys [announced their own iOS library](http://socket.io/blog/socket-io-on-ios/) - grab it while it's still hot:  
-[github.com/socketio/socket.io-client-swift](https://github.com/socketio/socket.io-client-swift)
-
----
-
 # Socket.IO / Objective C Library
 
   Interface to communicate between Objective C and [Socket.IO](http://socket.io/)
@@ -36,7 +28,8 @@ If required, additional parameters can be included in the handshake by adding an
 ``` objective-c
 [socketIO connectToHost:@"localhost"
                  onPort:3000
-             withParams:@{@"auth_token":@"1234"}];
+             withParams:[NSDictionary dictionaryWithObjectsAndKeys:@"1234", @"auth_token", nil]
+];
 ```
 
 A namespace can also be defined in the connection details:

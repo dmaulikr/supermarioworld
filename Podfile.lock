@@ -1,10 +1,13 @@
 PODS:
+  - socket.IO (0.5.2):
+    - SocketRocket (~> 0.2)
   - SocketRocket (0.5.0)
 
 DEPENDENCIES:
-  - SocketRocket
+  - socket.IO
 
 SPEC CHECKSUMS:
+  socket.IO: eaaaea33481d8a81d8f78e331f0c72ba44758036
   SocketRocket: 2c51efccd2d73c99a923407ca4b06e7e9da95dbf
 
 COCOAPODS: 0.39.0

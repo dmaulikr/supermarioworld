@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SocketRocket"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SocketRocket"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"SocketRocket" -l"icucore" -framework "CFNetwork" -framework "Security"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SocketRocket" "${PODS_ROOT}/Headers/Public/socket.IO"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SocketRocket" -isystem "${PODS_ROOT}/Headers/Public/socket.IO"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SocketRocket" -l"icucore" -l"socket.IO" -framework "CFNetwork" -framework "Security"
 PODS_ROOT = ${SRCROOT}/Pods

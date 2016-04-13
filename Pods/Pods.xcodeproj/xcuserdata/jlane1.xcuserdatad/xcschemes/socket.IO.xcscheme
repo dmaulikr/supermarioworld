@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8B48A304D936E2B358D9A676'
-               BlueprintName = 'Pods-Super Mario World'
+               BlueprintIdentifier = 'CBC8E2F3842D3DD50CF35CDC'
+               BlueprintName = 'socket.IO'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-Super Mario World.a'>
+               BuildableName = 'libsocket.IO.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

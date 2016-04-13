@@ -5,7 +5,7 @@
 
 target ‘Super Mario World’ do
 
-pod 'SocketRocket'
+pod 'socket.IO'
 
 end
 
