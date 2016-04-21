@@ -28,7 +28,7 @@
 
 - (void)importSocket {
     self.socketIO = [[SocketIO alloc] initWithDelegate:self];
-    [self.socketIO connectToHost:@"localhost" onPort:3000];
+    [self.socketIO connectToHost:@"localhost" onPort:4000];
 }
 
 - (void)animateInstructions {
