@@ -43,11 +43,19 @@
 }
 
 - (IBAction)marioAction:(id)sender {
-    [self.socketIO sendMessage:@"action"];
+    NSDictionary *action = @{
+                           @"name": @"actions",
+                           @"args": @[@"action"]
+                           };
+    [self.socketIO sendJSON:action];
 }
 
 - (IBAction)marioJump:(id)sender {
-    [self.socketIO sendMessage:@"jump"];
+    NSDictionary *jump = @{
+                        @"name": @"actions",
+                        @"args": @[@"jump"]
+                        };
+    [self.socketIO sendJSON:jump];
 }
 
 - (void)didReceiveMemoryWarning {
