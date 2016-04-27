@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SocketIO.h"
+@import CoreMotion;
 
 @interface ViewController ()<SocketIODelegate>
 
@@ -43,24 +44,36 @@
 }
 
 - (IBAction)marioAction:(id)sender {
-    NSDictionary *action = @{
-                           @"name": @"actions",
-                           @"args": @[@"action"]
-                           };
-    [self.socketIO sendJSON:action];
+
+    [self.socketIO sendEvent:@"actions" withData:@"action"];
 }
 
 - (IBAction)marioJump:(id)sender {
-    NSDictionary *jump = @{
-                        @"name": @"actions",
-                        @"args": @[@"jump"]
-                        };
-    [self.socketIO sendJSON:jump];
+
+    [self.socketIO sendEvent:@"actions" withData:@"jump"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - SocketIODelegate
+
+- (void) socketIODidConnect:(SocketIO *)socket {
+
+    NSLog(@"Did Connect");
+    
+}
+
+- (void) socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error {
+    
+    NSLog(@"Did Discconnect: %@", error.localizedDescription);
+}
+
+- (void) socketIO:(SocketIO *)socket didSendMessage:(SocketIOPacket *)packet {
+    
+    NSLog(@"Did Send Message");
+}
+
+- (void) socketIO:(SocketIO *)socket onError:(NSError *)error {
+    
+    NSLog(@"Did Error: %@", error.localizedDescription);
 }
 
 @end
