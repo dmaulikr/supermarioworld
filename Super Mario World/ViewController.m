@@ -31,7 +31,7 @@
 
 - (void)importSocket {
     self.socketIO = [[SocketIO alloc] initWithDelegate:self];
-    [self.socketIO connectToHost:@"10.0.1.13" onPort:4000];
+    [self.socketIO connectToHost:@"50.116.36.131" onPort:4000];
 }
 
 - (void)animateInstructions {
@@ -53,7 +53,6 @@
 }
 
 - (void)startMotionDetection {
-//    ViewController * __weak weakSelf = self;
     if (self.motionSensor.accelerometerAvailable) {
         self.motionSensor.accelerometerUpdateInterval = 1.0f/60.0f;
         [self.motionSensor startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMAccelerometerData *data, NSError *error) {
